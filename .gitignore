@@ -1,0 +1,11 @@
+# Ignore geth chaindata
+geth/chaindata
+geth/dapp
+geth/history
+geth/nodekey
+
+# Ignore environments
+environments/*
+
+# Ignore environments
+environments/*

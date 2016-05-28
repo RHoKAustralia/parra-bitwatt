@@ -11,6 +11,7 @@ geth --rpc --rpcaddr "0.0.0.0" \
 	--rpcapi "db,eth,net,web3,personal" \
 	--ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" \
 	--nodiscover --maxpeers 0 \
+	--ipcdisable \
 	--unlock 0x3e0d0e42ce28b5ae471dfc4ade385a4bf39dc8a9 \
 	--password passwordfile \
 	console
