@@ -1,4 +1,5 @@
 # parra-bitwatt
+<<<<<<< HEAD
 
 ##Objective
 
@@ -25,3 +26,33 @@ Bob has BitWatts stored in his digital wallet from when he previously sold exces
 Market Mechanism
 
 If power companies buy power off homeowners for 6 cents and sells to homeowners for 36 cents, BitWatts will systematically create a market value for power in this range (assuming that rational homeowners will not sell to peers at below 6 cents per kWh when they can get this rate from the power companies and not buy power from peers for over 36). This will theoretically create a price of power at a mutually beneficial price to peers (for example at 20 cents per kWh). This should also cause the power companies, who no longer have a monopoly on power trading, to buy and sell power at a fairer price to compete with the market i.e. the ‘true’ value for power.
+=======
+Stakeholders
+
+Commercial and residential with solar already installed
+- already in market: transitioning and augmentation
+- Benefits: better price, up-scaling, maximising
+
+Willing to install (price has scared them off)
+- newcomer: support to join
+- Benefits: shortening return on investment, reducing uncertainty
+
+Raising awareness of collective approach
+- outside market/unaware: education, resources and contacts
+- Benefits: highlighting opportunities, ways to access and support
+
+Businesses
+- strata management
+- small businesses (existing and new)
+- Carbon credit, renewable energy credits etc
+
+Research and development
+- sustainable technology research at Western Sydney University
+- expand as new technology develops e.g. building-attached PVC - building-integrated PVC
+
+Range of potential roles and responsibilities of Empower Parramatta: solar energy generator, retailer, consultant, supplier, maintenance, facility manger, quality  assurance (compliance and benchmarks)
+
+Potential test sites (to invite on board as part of funding proposal): public housing (already interest from one organisation), schools (will approach sustainability officer contact at Parra council who works with local schools), council buildings (we have a youth centre contact), stadium, clubs, commercial, residential
+
+Benefits of becoming a test-site: i) better price, up-scaling, maximising, ii) shortening return on investment, reducing uncertainty iii) highlighting opportunities, ways to access and support
+>>>>>>> 3a5827430e97bd4c4875a992c1ceb2a208f5ffd5
