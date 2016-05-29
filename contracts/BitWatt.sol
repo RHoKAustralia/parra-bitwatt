@@ -51,19 +51,24 @@ contract BitWatt {
 		return true;
 	}
 
-	function addCurator(address _nominee) onlyCurator returns (bool success){
-		if(member[_nominee].exists){
-			member[_nominee].isCurator = true;
+	function redeemBitwatts(uint256 _amount) onlyCurator returns (bool success){
+		if(bitwatts[msg.sender] >= _amount){
+			bitwatts[msg.sender] -= _amount;
+			supply -= _amount;
 			return true;
 		}
 		return false;
 	}
 
-	function addNewMember(address _nominee) onlyCurator returns (bool success){
-		if(!member[_nominee].exists){
-			member[_nominee] = Member(true, false, true);
+	function setMemberStatus(address _nominee, bool _member, bool _curator) 
+	onlyCurator returns(bool success) {
+		if(member[_nominee].exists){
+			member[_nominee].isCurator = _curator;
+			member[_nominee].isMember = _member;
 			return true;
+		} else {
+			member[_nominee] = Member(_member, _curator, true);
 		}
-		return false;
 	}
+
 }
