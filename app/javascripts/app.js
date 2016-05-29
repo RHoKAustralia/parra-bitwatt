@@ -2,6 +2,12 @@ var accounts;
 var account;
 var balance;
 
+function totalSupply() {
+  var bitwatt =  BitWatt.deployed()
+
+  bitwatt.totalSupply.call(account, {from: account})
+}
+
 function setStatus(message) {
   var status = document.getElementById("status");
   status.innerHTML = message;
