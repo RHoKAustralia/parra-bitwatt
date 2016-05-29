@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 geth/chaindata
 geth/dapp
@@ -5,3 +6,16 @@ geth/history
 geth/nodes
 geth/nodekey
 
+=======
+# Ignore geth chaindata
+geth/chaindata
+geth/dapp
+geth/history
+geth/nodekey
+
+# Ignore environments
+environments/*
+
+# Ignore environments
+environments/*
+>>>>>>> 577b3caf74982c9ad007b1173f20b95036646137
