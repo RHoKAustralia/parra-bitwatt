@@ -54,4 +54,18 @@ contract('BittWatt', function(accounts) {
     }).then(done).catch(done);
   });
 
+  it("should be able to transfer bitwatts", function(done) {
+    var bitwatt = BitWatt.deployed();
+    bitwatt.issueBitwatts(100, {from:accounts[0]}).then(function(result) {
+      return bitwatt.balanceOf.call(accounts[0]);
+    }).then(function(balance) {
+      assert.equal(balance, 100, '100 bitwatts not issued');
+      return bitwatt.transfer(accounts[1], 100, {from: accounts[0]});    
+    }).then(function() {
+      return bitwatt.balanceOf.call(accounts[1]);
+    }).then(function(balance) {
+      assert.equal(balance, 100, '100 bitwatts not transferred');
+    }).then(done).catch(done);
+  });
+
 });
