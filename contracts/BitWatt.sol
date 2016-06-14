@@ -2,7 +2,7 @@
 
 contract BitWatt {
 	
-	uint supply;
+	uint tokenSupply;
 	mapping(address=> uint) bitwatts;
 	mapping(address=> Member) public member;
 
@@ -37,7 +37,7 @@ contract BitWatt {
 	/// @notice Get the total supply of bitwatts
 	/// @return supply how many bitwatts are in circulation
 	function totalSupply() constant returns (uint256 supply){
-		return supply;
+		return tokenSupply;
 	}
 
 	/// @notice get the bitwatt balance of an address
@@ -65,7 +65,7 @@ contract BitWatt {
 	/// @return success if the bitwatts are issued
 	function issueBitwatts(uint256 _amount) onlyMember returns (bool success){
 		bitwatts[msg.sender] += _amount;
-		supply += _amount;
+		tokenSupply += _amount;
 		return true;
 	}
 
@@ -75,7 +75,7 @@ contract BitWatt {
 	function redeemBitwatts(uint256 _amount) onlyCurator returns (bool success){
 		if(bitwatts[msg.sender] >= _amount){
 			bitwatts[msg.sender] -= _amount;
-			supply -= _amount;
+			tokenSupply -= _amount;
 			return true;
 		}
 		return false;
