@@ -4,7 +4,7 @@ contract BitWatt {
 	
 	uint supply;
 	mapping(address=> uint) bitwatts;
-	mapping(address=> Member) member;
+	mapping(address=> Member) public member;
 
 	struct Member {
 		bool isMember;
